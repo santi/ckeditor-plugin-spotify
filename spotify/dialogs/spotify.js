@@ -10,7 +10,7 @@ CKEDITOR.dialog.add( 'spotify', function( editor ) {
                     {
                         id: 'embedCode',
                         type: 'text',
-                        label: 'Embed code', //TODO: i11n
+                        label: editor.lang.spotify.embedCodeLabel,
                         width: '200px',
                         setup: function(widget) {
                             this.setValue(widget.data.embedCode);
@@ -18,12 +18,12 @@ CKEDITOR.dialog.add( 'spotify', function( editor ) {
                         commit: function(widget) {
                             widget.setData('embedCode', this.getValue())
                         },
-                        validate: validateEmbedCode('Invalid Spotify embed code.'), // TODO: i11n
+                        validate: validateEmbedCode(editor.lang.spotify.embedCodeError),
                     },
                     {
                         id: 'align',
                         type: 'select',
-                        label: 'Align', //TODO: i11n
+                        label: editor.lang.common.align,
                         items: [
                             [ editor.lang.common.notSet, '' ],
                             [ editor.lang.common.alignLeft, 'left' ],
@@ -44,7 +44,7 @@ CKEDITOR.dialog.add( 'spotify', function( editor ) {
                             {
                                 id: 'width',
                                 type: 'text',
-                                label: 'Width', //TODO: i11n
+                                label: editor.lang.common.width,
                                 width: '100px',
                                 setup: function(widget) {
                                     this.setValue(widget.data.width);
@@ -56,7 +56,7 @@ CKEDITOR.dialog.add( 'spotify', function( editor ) {
                             {
                                 id: 'height',
                                 type: 'text',
-                                label: 'Height', //TODO: i11n
+                                label: editor.lang.common.height,
                                 width: '100px',
                                 setup: function(widget) {
                                     this.setValue(widget.data.height);

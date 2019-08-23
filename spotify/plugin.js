@@ -3,13 +3,15 @@ CKEDITOR.plugins.add('spotify', {
 
     icons: 'spotify',
 
+    lang: ['en', 'nb'],
+
     init: function(editor) {
         // Adds stylesheet to classic editor. Must be copied manually for inline editors
         editor.addContentsCss( this.path + 'styles/spotify.css' );
 
         // Adds widget to toolbar
         editor.widgets.add('spotify', {
-            button: 'Insert Spotify playlist', // TODO: Extract to i11n file
+            button: editor.lang.spotify.addButton,
 
             template:   '<div class="spotify-playlist-wrapper">' + 
                             '<iframe frameborder="0" class="no-border" allowtransparency="true" allow="encrypted-media"></iframe>' +
@@ -64,8 +66,7 @@ CKEDITOR.plugins.add('spotify', {
                 if (this.data.embedCode) {
                     this.parts.iframe.setAttribute('src', parseEmbedCode(this.data.embedCode))
                 }
-                
-                // Check and update width
+
                 if(this.data.width === ''){
                     this.element.removeStyle('width');
                 } else {
@@ -73,7 +74,6 @@ CKEDITOR.plugins.add('spotify', {
                     this.element.setStyle('width', this.data.width);
                 }
 
-                // Check and update height
                 if(this.data.height === ''){
                     this.element.removeStyle('height');
                 } else {
@@ -81,7 +81,6 @@ CKEDITOR.plugins.add('spotify', {
                     this.element.setStyle('height', this.data.height);
                 }
 
-                // Remove then re-add align-values
                 this.element.removeClass( 'align-left' );
                 this.element.removeClass( 'align-right' );
                 this.element.removeClass( 'align-center' );
