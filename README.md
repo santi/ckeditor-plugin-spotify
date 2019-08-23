@@ -4,7 +4,13 @@ Plugin for adding a [Spotify Play Button](https://developer.spotify.com/document
 
 Requires `CKEditor 4.3+` with plugin `widget`. The editor instance must allow `div` and `iframe` tags.
 
-The plugin uses a few custom styles. There are automatically included in the [classic editor](https://ckeditor.com/docs/ckeditor4/latest/examples/classic.html) instance, but must be copied for [inline editors](https://ckeditor.com/docs/ckeditor4/latest/examples/inline.html) and for the final target webpage.
+The plugin uses a few custom styles. There are automatically included in the [classic editor](https://ckeditor.com/docs/ckeditor4/latest/examples/classic.html) instance, but must be copied for [inline editors](https://ckeditor.com/docs/ckeditor4/latest/examples/inline.html) and for the final target webpage. To include the custom styles into your editor/webpage, include the following the `<head>` of your document:
+
+```html
+<head>
+    <link rel="stylesheet" href="<PATH_TO_CKEDITOR>/plugins/spotify/styles/spotify.css">
+</head>
+```
 
 
 # Translations
