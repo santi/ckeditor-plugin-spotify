@@ -2,7 +2,7 @@
 (function() {
   CKEDITOR.dialog.add("spotify", function(editor) {
     return {
-      title: "Edit Spotify Playlist",
+      title: editor.lang.spotify.title,
       minWidth: 200,
       minHeight: 100,
       contents: [
