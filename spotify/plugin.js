@@ -3,6 +3,8 @@ CKEDITOR.plugins.add("spotify", {
 
   icons: "spotify",
 
+  hidpi: true,
+
   lang: ["en", "nb"],
 
   init: function(editor) {
