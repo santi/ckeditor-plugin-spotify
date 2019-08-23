@@ -2,9 +2,11 @@
 
 Plugin for adding a [Spotify Play Button](https://developer.spotify.com/documentation/widgets/guides/adding-a-spotify-play-button/) to the CKEditor.
 
-Requires `CKEditor 4.3+` with plugin `widget`. The editor instance must allow `div` and `iframe` tags.
+Supports both Spotify URIs (spotify:album:1DFixLWuPkv3KT3TnV35m3) and Spotify URLs ([http://open.spotify.com/track/6rqhFgbbKwnb9MLmUQDhG6](http://open.spotify.com/track/6rqhFgbbKwnb9MLmUQDhG6)).
 
-The plugin uses a few custom styles. There are automatically included in the [classic editor](https://ckeditor.com/docs/ckeditor4/latest/examples/classic.html) instance, but must be copied for [inline editors](https://ckeditor.com/docs/ckeditor4/latest/examples/inline.html) and for the final target webpage. To include the custom styles into your editor/webpage, include the following the `<head>` of your document:
+Requires `CKEditor 4.3+` with the `widget` plugin . The editor instance must allow `div` and `iframe` tags.
+
+The plugin uses a few custom styles. These are automatically included in the [classic editor](https://ckeditor.com/docs/ckeditor4/latest/examples/classic.html) instance, but must be copied for [inline editors](https://ckeditor.com/docs/ckeditor4/latest/examples/inline.html) and for the final target webpage. To include the custom styles into your editor/webpage, include the following in the `<head>` of your document:
 
 ```html
 <head>
@@ -15,7 +17,7 @@ The plugin uses a few custom styles. There are automatically included in the [cl
 
 # Translations
 
-Currently supports English (en) and Norwegian Bokmål (nb). Do you want to provide translations for your own language? Please fork the project and open a pull request.
+Currently supports English (en) and Norwegian Bokmål (nb). Want to provide translations for your own language? Please fork the project and open a pull request.
 
 
 # Credits
