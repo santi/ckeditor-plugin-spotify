@@ -7,7 +7,7 @@
 
     hidpi: true,
 
-    lang: ["en", "nb"],
+    lang: ["en", "nb", "uk"],
 
     init: function(editor) {
       // Adds stylesheet to classic editor. Must be copied manually for inline editors
