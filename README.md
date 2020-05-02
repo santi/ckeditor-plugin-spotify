@@ -19,7 +19,7 @@ Published in the official [CKEditor plugin repository](https://ckeditor.com/cke4
 
 ## Translations
 
-Currently supports English (en) and Norwegian Bokmål (nb). Want to provide translations for your own language? Please fork the project and open a pull request.
+Currently supports English (en), Norwegian Bokmål (nb) and Ukrainian (uk). Want to provide translations for your own language? Please fork the project and open a pull request.
 
 
 ## Screenshots
