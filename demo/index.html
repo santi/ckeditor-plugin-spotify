@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify CKEditor Plugin</title>
+    <link rel="stylesheet" href="/spotify/styles/spotify.css" />
+    <!-- Replace CKEditor version number to test version compatibility -->
+    <script src="https://cdn.ckeditor.com/4.15.0/full/ckeditor.js"></script>
+  </head>
+  <body>
+    <textarea name="editor1"></textarea>
+    <script>
+      CKEDITOR.plugins.addExternal("spotify", "/spotify/", "plugin.js");
+
+      // extraPlugins needs to be set too.
+      CKEDITOR.replace("editor1", {
+        extraPlugins: "spotify",
+      });
+    </script>
+  </body>
+</html>
