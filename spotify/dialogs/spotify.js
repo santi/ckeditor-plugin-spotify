@@ -77,9 +77,11 @@
 
   function validateEmbedCode(errorMsg) {
     // spotify:track:6rqhFgbbKwnb9MLmUQDhG6
-    var spotifyURIRegex = /^spotify:(album|playlist|track|artist):([a-zA-Z0-9]{22})$/;
+    var spotifyURIRegex =
+      /^spotify:(album|playlist|track|artist):([a-zA-Z0-9]{22})$/;
     // https://open.spotify.com/album/4RuzGKLG99XctuBMBkFFOC
-    var spotifyURLRegex = /^https?:\/\/open\.spotify\.com\/(album|playlist|track|artist)\/([a-zA-Z0-9]{22})$/;
+    var spotifyURLRegex =
+      /^https?:\/\/open\.spotify\.com\/(album|playlist|track|artist)\/([a-zA-Z0-9]{22})(\?si\=[a-z0-9]{16})?$/;
 
     return function() {
       var embedCode = this.getValue();

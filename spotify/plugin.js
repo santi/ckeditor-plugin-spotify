@@ -110,8 +110,10 @@
 
     var embedURLTemplate =
       "https://open.spotify.com/embed/{spotifyType}/{spotifyID}";
-    var spotifyURIRegex = /^spotify:(album|playlist|track|artist):([a-zA-Z0-9]{22})$/;
-    var spotifyURLRegex = /^https?:\/\/open\.spotify\.com\/(album|playlist|track|artist)\/([a-zA-Z0-9]{22})$/;
+    var spotifyURIRegex =
+      /^spotify:(album|playlist|track|artist):([a-zA-Z0-9]{22})$/;
+    var spotifyURLRegex =
+      /^https?:\/\/open\.spotify\.com\/(album|playlist|track|artist)\/([a-zA-Z0-9]{22})(\?si\=[a-z0-9]{16})?$/;
 
     if (spotifyURIRegex.test(embedCode)) {
       capturedGroups = embedCode.match(spotifyURIRegex);
