@@ -1,6 +1,6 @@
 # CKEditor Spotify Plugin
 
-Plugin for adding a [Spotify Play Button](https://developer.spotify.com/documentation/widgets/guides/adding-a-spotify-play-button/) to the CKEditor.
+Plugin for adding a [Spotify Embed](https://developer.spotify.com/documentation/widgets/guides/adding-a-spotify-embed/) to the CKEditor.
 
 Supports both Spotify URIs (spotify:album:1DFixLWuPkv3KT3TnV35m3) and Spotify URLs ([http://open.spotify.com/track/6rqhFgbbKwnb9MLmUQDhG6](http://open.spotify.com/track/6rqhFgbbKwnb9MLmUQDhG6)).
 
@@ -10,24 +10,25 @@ The plugin uses a few custom styles. These are automatically included in the [cl
 
 ```html
 <head>
-    <link rel="stylesheet" href="<PATH_TO_CKEDITOR>/plugins/spotify/styles/spotify.css">
+  <link
+    rel="stylesheet"
+    href="<PATH_TO_CKEDITOR>/plugins/spotify/styles/spotify.css"
+  />
 </head>
 ```
 
 Published in the official [CKEditor plugin repository](https://ckeditor.com/cke4/addon/spotify).
 
-
 ## Translations
 
 Currently supports English (en), Norwegian Bokmål (nb) and Ukrainian (uk). Want to provide translations for your own language? Please fork the project and open a pull request.
 
-
 ## Screenshots
+
 <img src="/screenshots/spotify-plugin-dialog.png?raw=true" alt="Dialog screenshot" width="300">
 <img src="/screenshots/spotify-plugin-small-widget.png?raw=true" alt="Small widget screenshot" width="300">
 <img src="/screenshots/spotify-plugin-large-widget.png?raw=true" alt="Large widget screenshot" width="300">
 <img src="/screenshots/spotify-plugin-multiple-widgets.png?raw=true" alt="Multiple widgets screenshot" width="300">
-
 
 ## Credits
 
